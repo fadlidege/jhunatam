@@ -1,0 +1,67 @@
+
+body{
+background:#ffffee;
+margin-top:250px;
+}
+
+.container{
+	perspective:1000px;
+	perspective-origin:100% 100%;
+	width:fit-content;
+	margin:0 auto;
+}
+
+.kotak{
+	position:relative;
+	height:200px;
+	width:200px;
+	transform-style:preserve-3d;
+	//transform: rotateX(20deg)rotateY(20deg)rotateZ(0deg);
+	animation:rotate 6s linear infinite;
+}
+
+
+.kotak div {
+	position:absolute;
+	height:200px;
+	width:200px;
+	opacity:0.5;
+	//background:linear-gradient(to right,#05295f, #0cbf72);
+	background:linear-gradient(to right,#F35285, #AA102F);
+}
+
+.input{
+position:absolute;
+top:40px;
+right:20%;
+
+}
+
+
+.s1 {
+	transform:translateZ(100px);
+}
+
+.s2{
+	transform:rotateY(90deg) translateZ(100px);
+}
+
+.s3{
+	transform:rotateY(180deg) translateZ(100px);
+}
+s4{
+	transform:rotateX(90dex) translateZ(100px);
+}
+
+.s5{
+	transform:rotateY(-90deg) translateZ(100px);
+}
+.s6{
+	transform:rotateX(-90deg) translateZ(100px) rotate(180deg)
+}
+
+@keyframes rotate{
+	100%{
+	transform: rotateX(0deg) rotateY(360deg) rotateZ(360deg)
+	}
+}
